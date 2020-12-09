@@ -44,11 +44,15 @@ public class Cell implements DataTag {
         return false;
     }
 
-    public String getValue() {
-        return value;
+    public String[] getValue() {
+        return new String[]{value};
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setValue(String[] value) {
+        if (value.length >= 2) {
+            System.err.println("Cell dont have 2 and more value");
+            return;
+        }
+        this.value = value[0];
     }
 }

@@ -8,4 +8,6 @@ public interface DataTag {
     boolean isPacket();
     boolean isCell();
     boolean isList();
+    String[] getValue();
+    void setValue(String[] value);
 }

@@ -20,11 +20,13 @@ public class Packet implements DataTag {
 
     @Override
     public Class getOClass() {
-        return Packet.class;
+        System.err.println("Packet dont have content Class");
+        return null;
     }
 
     @Override
     public void setOClass(Class oClass) {
+        System.err.println("Packet dont have content Class");
     }
 
     @Override
@@ -84,5 +86,14 @@ public class Packet implements DataTag {
             }
         }
         this.content = newContent;
+    }
+
+    public String[] getValue() {
+        System.err.println("Packet dont have value");
+        return null;
+    }
+
+    public void setValue(String[] value) {
+        System.err.println("Packet dont have value");
     }
 }

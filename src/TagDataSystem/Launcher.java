@@ -10,7 +10,7 @@ public class Launcher {
         packet.addTag(cell);
         packet.addTag(cell1);
         packet.addTag(cell2);
-        packet.deleteTagByName("Byot");
+        DataTag tag = packet.getTagByName("Bot");
         System.out.println(1);
     }
 }
