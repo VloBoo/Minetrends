@@ -1,4 +1,5 @@
 package TagDataSystem.Data.Structure;
 
-public class List {
+public class List{
+    private String name;
 }
