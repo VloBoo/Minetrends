@@ -1,14 +1,13 @@
 package TagDataSystem;
 
-public class Cell implements DataTag {
+public class List implements DataTag {
     private String name;
     private Class oClass;
-    private String value;
+    private String[] value;
 
-    public Cell(String name) {
+    public List(String name) {
         setName(name);
     }
-
     @Override
     public void setName(String name) {
         this.name = name;
@@ -36,19 +35,19 @@ public class Cell implements DataTag {
 
     @Override
     public boolean isCell() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isList() {
-        return false;
+        return true;
     }
 
-    public String getValue() {
+    public String[] getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(String[] value) {
         this.value = value;
     }
 }
