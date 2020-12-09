@@ -1,7 +1,5 @@
 package TagDataSystem;
 
-import TagDataSystem.Data.Structure.Cell;
-
 import java.util.HashMap;
 
 public class Launcher {
